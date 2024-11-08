@@ -1,0 +1,120 @@
+.main{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.grid{
+    width: 625px;
+    height: 625px;
+    display: flex;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-radius: 1%;
+    background-color: bisque;
+}
+
+.grid Div{
+    width: 25px;
+    height: 25px;
+
+
+}
+
+.snake{
+    background-color: green;
+    border-radius: 20%;
+}
+
+.apple{
+    background-color: red;
+    border-radius: 20%;
+}
+
+.startScreen{
+    background: linear-gradient(to bottom, black 0%, gray 75%, gray, rgb(77, 76, 76) 100%);
+
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    border-radius: 5%;
+
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.endScreen{
+    background: linear-gradient(to bottom, black 0%, gray 75%, gray, rgb(77, 76, 76) 100%);
+
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    border-radius: 5%;
+
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+
+.banner{
+
+}
+
+.bannerLower{
+    position: absolute;
+    top:120%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
+}
+
+.start{
+    padding: 15px;
+    padding-left: 50px;
+    padding-right:50px;
+
+}
+
+
+
+/* Ensure start screen is properly positioned */
+#startToggle {
+    display: block;
+    background: linear-gradient(to bottom, black 0%, gray 75%, gray, rgb(77, 76, 76) 100%);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 9998; /* Ensure it's below the end screen */
+}
+
+/* Ensure end screen is properly positioned */
+#endToggle {
+    display: none; /* Start hidden */
+    background: linear-gradient(to bottom, black 0%, gray 75%, gray, rgb(77, 76, 76) 100%);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's above other content */
+}
